@@ -1,6 +1,7 @@
+/* cor branca de fundo */
 body {
-    background-color: #F5F5F5;
-    color: #555;
+    background-color: #00b296;
+    color:#171934;
     font-size: 1.1em;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     width: 100%;
@@ -27,7 +28,7 @@ text-align: "left";
 }
 
 section {
-border: thick double #32a1ce;;
+border: double #003366;
 margin-bottom: 30px;
 width: 50%;
 }
@@ -39,7 +40,8 @@ height: 36px;
 
 #projeto1, #projeto2 {
 padding: 10px 20px;
-line-height: auto
+line-height: auto;
+width:100%;
 }
 
 #formulario {
@@ -52,6 +54,7 @@ width: 100%;
 display: flex;
 width: 100%;
 justify-content: space-around;
+flex-wrap: wrap;
 }
 
 #btnSituacao{
@@ -69,6 +72,12 @@ display: flex;
 flex-direction: column;
 align-items: center;
 gap: 30px;
+}
+
+@media (max-width: 768px) {
+    #content {
+        flex-direction: column;
+    }
 }
 
 .nota {
@@ -93,3 +102,4 @@ margin-top: 0;
 width: 80px;
 height: 36px;
 }
+
